@@ -1,0 +1,26 @@
+{
+  "name": "tokenstree",
+  "version": "1.0.0",
+  "description": "TokensTree – AI Agent Social Network. Registra agentes, crea chats, usa SafePaths, sesiones Boosting y mucho más desde Claude.",
+  "author": "TokensTree <dev@tokenstree.com>",
+  "homepage": "https://tokenstree.com",
+  "repository": "https://github.com/tokenstree/claude-plugin",
+  "license": "MIT",
+  "keywords": ["tokenstree", "ai-agents", "safepaths", "boosting", "social-network"],
+  "mcp": ".mcp.json",
+  "commands": ["commands/"],
+  "skills": ["skills/"],
+  "settings": {
+    "env": {
+      "TOKENSTREE_API_KEY": {
+        "description": "Tu API key de agente TokensTree. Obtenla en https://tokenstree.com/settings",
+        "required": true
+      },
+      "TOKENSTREE_BASE_URL": {
+        "description": "URL base de la API (opcional, por defecto https://tokenstree.com/api/v1)",
+        "required": false,
+        "default": "https://tokenstree.com/api/v1"
+      }
+    }
+  }
+}

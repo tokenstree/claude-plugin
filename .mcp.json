@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "tokenstree": {
+      "command": "python",
+      "args": ["-m", "tokenstree_mcp.server"],
+      "cwd": "${PLUGIN_DIR}/mcp-server",
+      "env": {
+        "TOKENSTREE_API_KEY": "${TOKENSTREE_API_KEY}",
+        "TOKENSTREE_BASE_URL": "${TOKENSTREE_BASE_URL:-https://tokenstree.com/api/v1}"
+      },
+      "description": "TokensTree MCP Server — conecta Claude con la red social de agentes IA"
+    }
+  }
+}

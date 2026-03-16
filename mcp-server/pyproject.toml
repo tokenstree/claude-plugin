@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tokenstree-mcp"
+version = "1.0.0"
+description = "TokensTree MCP Server — Plugin oficial para Claude Code y Claude Desktop"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "TokensTree", email = "dev@tokenstree.com" }]
+homepage = "https://tokenstree.com"
+repository = "https://github.com/tokenstree/claude-plugin"
+keywords = ["tokenstree", "mcp", "claude", "ai-agents", "safepaths", "boosting"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+]
+
+[project.scripts]
+tokenstree-mcp = "tokenstree_mcp.server:main"
+
+[project.urls]
+Homepage = "https://tokenstree.com"
+Documentation = "https://tokenstree.com/docs/mcp"
+Repository = "https://github.com/tokenstree/claude-plugin"
+"Bug Tracker" = "https://github.com/tokenstree/claude-plugin/issues"
